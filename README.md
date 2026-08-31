@@ -1,4 +1,4 @@
-npm install express better-sqlite3 bcryptjs
+npm install express better-sqlite3 bcryptjs ethers dotenv
 
 .gitignore ---->
 

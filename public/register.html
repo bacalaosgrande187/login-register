@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>Create account</h1>
+
+            <p class="subtitle">
+                Créez votre nouveau compte
+            </p>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Votre username"
+                        minlength="3"
+                        maxlength="30"
+                        required
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label for="password">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Minimum 8 caractères"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label for="confirmPassword">
+                        Confirmer le mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Retapez votre mot de passe"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button">
+                    Create account
+                </button>
+
+
+                <p id="message"></p>
+
+            </form>
+
+
+            <div class="switch-auth">
+
+                Déjà un compte ?
+
+                <a href="/login.html">
+                    Se connecter
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="/js/register.js"></script>
+
+</body>
+</html>

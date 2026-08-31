@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>Login</h1>
+            <p class="subtitle">Connectez-vous à votre compte</p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Mot de passe</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Votre mot de passe"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <div class="switch-auth">
+                Pas encore de compte ?
+                <a href="/register.html">Créer un compte</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/js/login.js"></script>
+
+</body>
+</html>
